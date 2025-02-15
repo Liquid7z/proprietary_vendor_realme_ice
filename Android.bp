@@ -8156,6 +8156,10 @@ cc_prebuilt_library_shared {
                 "libmpbase",
                 "liblog",
                 "libc",
+                "libcdsprpc",
+                "libarc.ion",
+                "libarcsoft_qnnhtp",
+                "libz",
                 "libm",
                 "libdl",
             ],
@@ -8183,7 +8187,33 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libc",
                 "libm",
+                "libarc.ion",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarc.ion",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libarc.ion.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libdmabufheap",
+                "libc++",
             ],
         },
     },
@@ -8207,6 +8237,10 @@ cc_prebuilt_library_shared {
                 "libmpbase",
                 "liblog",
                 "libc",
+                "libz",
+                "libcdsprpc",
+                "libarc.ion",
+                "libarcsoft_qnnhtp",
                 "libm",
                 "libdl",
             ],

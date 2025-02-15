@@ -840,6 +840,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_dualcam_refocus_left \
     libarcsoft_dualcam_refocus_preview \
     libarcsoft_dualcam_refocus_uw \
+    libarc.ion \
     libarcsoft_frc \
     libarcsoft_hdr_couple_api \
     libarcsoft_hdr_couple_api_V2 \
